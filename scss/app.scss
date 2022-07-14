@@ -1,0 +1,34 @@
+@import"_reset";
+
+body{
+    background-color: black;
+}
+
+.layer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.layer1 {
+    opacity: 0.5;
+    .wrapper_numbers{
+        // background: red;
+        filter: blur(1px);
+    }
+}
+
+
+
+.wrapper_numbers{
+    position: fixed;
+    margin: 1rem 0 0 1rem;
+    display: flex;
+    flex-flow: column;
+
+    &-p{
+        color: chartreuse;
+    }
+}
