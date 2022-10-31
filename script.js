@@ -4,8 +4,8 @@ const elementsNumber = 100;
 const velocity = 10;
 
 function createMatrixNodeHTML(layerSelector){
-    let top = Math.trunc (Math.random () * 100);
-    let left = Math.trunc (Math.random () * 100);
+    let top = Math.trunc(Math.random () * 100);
+    let left = Math.trunc(Math.random () * 100);
     let layer = document.querySelector(layerSelector);
 
     let html_wrapper_numbers = document.createElement('div');
@@ -43,9 +43,8 @@ function add_numbers(node_wrapper){
 
 for (let i = 0; i < elementsNumber ; i++) {
     createMatrixNodeHTML('.layer1');
-
 }
+
 for (let i = 0; i < elementsNumber ; i++) {
     createMatrixNodeHTML('.layer2');
-
 }
